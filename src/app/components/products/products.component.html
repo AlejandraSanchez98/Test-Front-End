@@ -1,1 +1,19 @@
-<p>products works!</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let product of productsArray" class="col-md-2" style="margin-right: 3%;">
+            <div class="productContainer">
+                <img [src]="product.imageUrl">
+                <br>
+                <label class="titleFontProduct">{{product.productName}}</label>
+                <br>
+                <ngb-rating [(rate)]="product.stars" style="color: #F8475F"></ngb-rating>
+                <br>
+                <label *ngIf="product.listPrice != null">de ${{product.listPrice}}</label>
+                <br>
+                <strong>por ${{product.price}}</strong>
+                <br>
+                <button mat-flat-button class="actionButton" (click)="addProductToShoppingCart(product)">COMPRAR</button>
+            </div>  
+        </div>
+    </div>
+</div>

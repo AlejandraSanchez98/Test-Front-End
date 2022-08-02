@@ -1,27 +1,27 @@
-# TestFrontEnd
+ - Proyecto desarrollado con **Angular** V13.2.6 para poder ejecutar el proyecto es necesario tener las siguientes tecnologias instaladas:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    -   Node probado con versiones LTS V14.17.1 y v16.16.0
+        -   [](https://nodejs.org/es/)[https://nodejs.org/es/](https://nodejs.org/es/)
+    -   NPM probado con version 8.1.1
+    -   Angular probado con versiones 13.2.6 y 14.1.0
+        -   npm install -g @angular/cli
+        -   [](https://angular.io/guide/setup-local)[https://angular.io/guide/setup-local](https://angular.io/guide/setup-local)
+-   Para **ejecutar la aplicacion** basta con ubicarse en el directorio raiz de la aplicación y correr los siguientes comandos:
+    -   npm install
+    -   ng serve
+        -   En dado caso de que se tenga el puerto 4200 ocupado (es el que carga por defecto angular), existe la posibilidad de modificar el puerto con el siguiente comando
+            -   ng serve —port=4200
+-   **Estatus del proyecto**
+    -   Lo realizado
+        -   Se realizó la simulación de compra de productos y persistencia en la app
+        -   Se anexó slide show para banners
+        -   Se anexó el slide show para los productos
+        -   Se puede visualizar los productos que se compraron si se oprime el icono del carrito de compras
+        -   Se consumió el web service de manera correcta
+    -   Pendiente
+        -   El footer de la app
+        -   Dar simetría al slide show de productos (boton)
+        -   Mostrar icono de nuevo producto agregado en el carrito de compras
+        -   Responsividad móvil
+        -    Validar de mejor manera el carrito cuando esta vacío   

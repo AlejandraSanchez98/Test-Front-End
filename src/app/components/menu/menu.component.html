@@ -1,1 +1,55 @@
-<p>menu works!</p>
+<header>
+    <div class="container" style="margin-top: 20px;">
+        <div class="row">
+            <!--logo-->
+            <div class="col-md-2">
+                <img src="../../../assets/images/shared/logoCorebiz.svg" alt="Corebiz" style="height: 28px;">
+            </div>
+            <!--search input-->
+            <div class="col-md-6">
+                <mat-form-field appearance="legacy" style="width: 100%">
+                    <mat-label>¿Qué estás buscando?</mat-label>
+                    <input matInput>
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </div>
+            <!--account-->
+            <div class="col-md-2">
+                <button mat-icon-button>
+                    <mat-icon>person_outlined</mat-icon>
+                </button>                
+            </div>
+            <!--shopping cart-->
+            <div class="col-md-2">
+                <button mat-icon-button>
+                    <mat-icon matBadge="15" matBadgeColor="accent" (click)="openNotificationModal()">shopping_cart</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--notification modal-->
+<ng-template #notificationModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Próximas compras</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div *ngFor="let wish of wishListArray ">
+                    <p>
+                      <b>producto:</b> {{wish.productId}}  <b>cantidad:</b> {{wish.quantity}}
+                    </p>
+                    <span *ngIf="wishListArray.length === 0">Sin productos en tu carrito</span>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="removeAllProducts()">Limpiar carrito</button>
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Guardar</button>
+    </div>
+  </ng-template>
