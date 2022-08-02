@@ -1,1 +1,29 @@
-<p>carousel works!</p>
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/images/carousel/img1.jpg" style="width: 100%; max-height: 40%;">
+      </div>
+      <div class="carousel-caption">
+        <h3>¡Hola! ¿Qué es lo que buscas?</h3>
+        <p>Crear o migrar tu comercio electrónico</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/images/carousel/img2.png" style="width: 100%; max-height: 40%;">
+      </div>
+      <div class="carousel-caption">
+        <h3>¡Hola! ¿Qué es lo que buscas?</h3>
+        <p>Crear o migrar tu comercio electrónico</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="../../../assets/images/carousel/img3.png" style="width: 100%; max-height: 40%;">
+      </div>
+      <div class="carousel-caption">
+        <h3>¡Hola! ¿Qué es lo que buscas?</h3>
+        <p>Crear o migrar tu comercio electrónico</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
