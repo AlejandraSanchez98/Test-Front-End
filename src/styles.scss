@@ -5,4 +5,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.actionButton{width: 100%; background: black; color: white;}
+
+
+.actionButton{width: auto; background: black; color: white;}
+.snackbarError { background: #a81c1c; color: white } 
+.snackbarSuccess { background: #389b00; color: white} 
+.snackbarWarning { background: gold; color: black}

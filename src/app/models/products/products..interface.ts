@@ -13,3 +13,10 @@ export interface IInstallments {
     quantity: number,
     value: number
 }
+
+
+export interface IShoppingCart {
+    productId: number,
+    productName: string,
+    quantity?: number
+}
